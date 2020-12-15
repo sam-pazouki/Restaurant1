@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
+#landing-page {
+  background-image: url(images/pizza\ baaar.webp);
+  background-size: cover;
+  height: 100vh;
+}
+.title {
+  text-align: center;
+  color: rgb(236, 235, 174);
+}
