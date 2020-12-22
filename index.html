@@ -3,26 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pizza Bar</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="nav.css">
 </head>
 <body>
     <main>
 <section id="landing-page">
-    <div class="nav-slider"></div>
+    <div class="nav-slider">
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
-
-    </div>
+</div>
     <header class="title-background">
 <h2 class="title">Pizza Bar</h2>
 </header>
 </section>
 <section class="nav-slider-section">
+    <button class="close-nav-slider">x</button>
+    <section class="nav-links-container">
+        <ul>
+<li><a  class="nav-links" href="#menu">Menu</a></li>
+<li><a class="nav-links" href="#pizzabar-info">Information</a></li>
+ </ul>
+    </section>
+</section>
+
+
+<section id="menu">
+    <h2 class="menu-title">Menu</h2>
+<section class="tabs-container">
+    <section class="tabs">
+        <button class="tabHeader active-tab" data-tab="1">Pizza</button>
+        <button class="tabHeader" data-tab="2">Appetizer</button>
+        <button class="tabHeader" data-tab="3">Deserts</button>
+        <button class="tabHeader" data-tab="4">Drinks</button>
+</section>
+
+<section id="tabsection-1" class="tabsection show-tab">
+<p>1. Ham & Crab stick<span class="menu-price">$7.90</span></p>
+<p>2. Hawaiian<span class="menu-price">$9.90</span></p>
+<p>3. Pork Delux<span class="menu-price">$12</span></p>
+<p>4. Veggie<span class="menu-price">$11</span></p>
+<p>5. Double Pepporoni<span class="menu-price">$14</span></p>
+<p>6. Magherita<span class="menu-price">$13.90</span></p>
+</section>
+<section id="tabsection-2" class="tabsection hide-tab">
+<p>1. Gin Tonic<span class="menu-price">$10</span></p>
+<p>2. Orange Agave<span class="menu-price">$12</span></p>
+<p>3. Margarita<span class="menu-price">$12</span></p>
+<p>4. Mojito<span class="menu-price">$10</span></p>
+<p>5. Bloody Mary<span class="menu-price">$13</span></p>
+<p>6. Water<span class="menu-price">$2</span></p
+</section>
+<section id="tabsection-3" class="tabsection hide-tab">
+<p>1. Spicy Drumlets<span class="menu-price">$9</span></p>
+<p>2. Cheese Fries<span class="menu-price">$6</span></p>
+<p>3. Onion Rings<span class="menu-price">$5</span></p>
+<p>4. Calamari<span class="menu-price">$9</span></p>
+</section>
+<section id="tabsection-4" class="tabsection hide-tab">
+<p>1. Chocolate Bread Pudding<span class="menu-price">$10</span></p>
+<p>2. Ice Cream Sundae<span class="menu-price">$12</span></p>
+<p>3. Meyer Lemon Tart<span class="menu-price">$10</span></p>
+<p>4. Ristic Apple Tart<span class="menu-price">$10</span></p>
+</section>
+</section>
+</section>
+
+<section id="restaurant-info">
+<section class="info-container">
+</section>
+<section id="information">
+    <section class="info-container">
+<section class="address">
+    <h2 class="restaurant-info-title">Address</h2>
+    <p class="address">456 Restaurant st1</p>
+<p class="address">California, Los Angeles</p>
+</section>
+<section class="business-hour">
+<h2 class="restaurant-info-title">Business Hour</h2>
+<p class="hour">Monday-Friday: 11am-12am</p>
+<p class="hour">Saturday-Sunday: 6pm-12am</p>
+</section>
+<section class="contact">
+<h2 class="restaurant-info-title">Pick Up</h2>
+<p class="phone">Call Us: 223-432-332</p>
+</section>
 </section>
 </main>
+
 <script src="main.js"></script>
 <script src="nav.js"></script>
 </body>

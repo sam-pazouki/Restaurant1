@@ -9,9 +9,163 @@ h2 {
 #landing-page {
   background-image: url(images/pizza\ baaar.webp);
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 .title {
   text-align: center;
   color: rgb(236, 235, 174);
+  font-size: 2em;
+}
+.title-background {
+  background: black;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+}
+
+/* nav slider */
+.nav-slider {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.line {
+  background: #eee;
+  height: 3px;
+  margin: 5px;
+  width: 30px;
+}
+
+.line:nth-child(1) {
+  margin-top: 0;
+}
+
+/* nav-slider section */
+.nav-slider-section {
+  background: rgb(32, 31, 31);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+.close-nav-slider {
+  border: none;
+  outline: none;
+  float: right;
+  background: transparent;
+  color: rgb(146, 146, 0);
+  font-size: 1.5em;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.nav-links-container li {
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.5em;
+}
+
+.openNav {
+  animation: openNav 0.5s forwards;
+}
+
+.closeNav {
+  animation: closeNav 0.5s forwards;
+}
+
+@keyframes openNav {
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes closeNav {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Menu */
+#menu {
+  background: black;
+}
+.menu-title {
+  color: rgb(207, 205, 205);
+  text-align: center;
+  padding: 25px;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.1em;
+  color: #eee;
+}
+
+.menu-price {
+  float: right;
+}
+
+/* Restaurant Information */
+#pizzabar-info {
+  background: black;
+  padding: 20px;
+}
+.restaurant-info-title {
+  color: azure;
+  text-align: center;
+}
+
+.info-container {
+  display: grid;
+  grid-auto-columns: 1fr;
+}
+
+.address,
+.business-hour,
+.contact {
+  padding: 10px;
+}
+
+.address,
+.hour {
+  font-size: 1em !important;
+  text-align: center;
+}
+
+.phone {
+  font-size: 1em !important;
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+@media screen and (min-width: 768px) {
+  .info-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .addressm .business-hour {
+    border-right: 1px solid #eee;
+    padding: 30px;
+  }
+}
+
+.contact {
+  padding: 30px;
 }
